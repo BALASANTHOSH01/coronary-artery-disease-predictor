@@ -9,14 +9,17 @@ import category_encoders as ce
 from imblearn.ensemble import EasyEnsembleClassifier
 import shap
 import plotly.express as px
+import os
 
 # Load the pickled model and encoder
-with open('best_model.pkl', 'rb') as model_file:
-    model = pkl.load(model_file)
+BASE_DIR = os.path.dirname(__file__)
 
-with open('cbe_encoder.pkl', 'rb') as encoder_file:
-    encoder = pkl.load(encoder_file)
+with open(os.path.join(BASE_DIR, 'best_model.pkl'), 'rb') as f:
+    model = pkl.load(f)
 
+with open(os.path.join(BASE_DIR, 'cbe_encoder.pkl'), 'rb') as f:
+    encoder = pkl.load(f)
+    
 # Load the dataset for reference
 data = pd.read_csv('brfss2022_data_wrangling_output.zip', compression='zip')
 data['heart_disease'] = data['heart_disease'].apply(lambda x: 1 if x == 'yes' else 0).astype('int')
