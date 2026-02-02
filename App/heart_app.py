@@ -34,7 +34,7 @@ local_css("style_v1.css")
 # Main layout with three columns
 row0_0, row0_1, row0_2, row0_3 = st.columns((0.08, 6, 3, 0.17))
 with row0_1:
-    st.title("AI-Powered Heart Disease Assessment App")
+    st.title("Coronary Artery Disease Predictor")
     st.write("Unmatched Accuracy with Cutting-Edge Machine Learning Models")
 st.write('---')
 
@@ -43,19 +43,20 @@ st.markdown("""
 <div class="flex-container">
     <div class="flex-item introduction">
         <h2>Introduction</h2>
-        <p>The AI-Powered Heart Disease Risk Assessment App provides users with tailored risk scores and actionable recommendations to help mitigate their heart disease risk. Using advanced AI and modeling techniques, this app offers easy-to-understand assessments and preventive measures to make safeguarding your cardiovascular health straightforward and accessible.</p>
+        <p>The Coronary Artery Disease Predictor delivers personalized risk assessments and evidence-based recommendations to help you reduce cardiovascular disease risk. Leveraging state-of-the-art machine learning algorithms, this application provides clear, actionable insights to support proactive heart health management.</p>
     </div>
     <div class="flex-item how-it-works">
-        <h2>How it works</h2>
+        <h2>How It Works</h2>
         <ul>
-            <li><strong>User Input:</strong> Enter your health information, such as age, BMI, physical activity levels, smoking status, and medical history (e.g., heart attacks, strokes, diabetes).</li>
-            <li><strong>Data Analysis:</strong> The app analyzes your input using advanced AI models specifically designed for heart disease risk prediction.</li>
-            <li><strong>Risk Assessment:</strong> Receive a personalized risk score indicating your potential for heart disease.</li>
-            <li><strong>Recommendations:</strong> Get actionable advice to mitigate your risk, including lifestyle modification suggestions.</li>
+            <li><strong>Input Health Data:</strong> Provide key health metrics including age, BMI, physical activity, smoking habits, and medical history (heart attacks, strokes, diabetes, etc.).</li>
+            <li><strong>AI-Powered Analysis:</strong> Advanced machine learning models analyze your data using ensemble methods optimized for coronary artery disease prediction.</li>
+            <li><strong>Risk Evaluation:</strong> Receive a precise risk score (0-100%) with detailed feature contribution analysis powered by SHAP explainability.</li>
+            <li><strong>Personalized Guidance:</strong> Access tailored recommendations prioritized by their impact on your risk profile, with specific lifestyle interventions.</li>
         </ul>
     </div>
 </div>
 """, unsafe_allow_html=True)
+
 
 st.write('---')
 
@@ -372,7 +373,7 @@ st.write('---')
 row8_0A, row8_1B, row8_5C = st.columns((0.08, 12, 0.17))
 with row8_1B:
     st.write("#### Learn More")
-    st.markdown("[![](https://img.shields.io/badge/GitHub%20-Machine%20Learning%20Models-informational)](https://github.com/akthammomani/AI_powered_heart_disease_risk_assessment_app/tree/main/Notebooks/Modeling/)")
+    st.markdown("[![](https://img.shields.io/badge/GitHub%20-Machine%20Learning%20Models-informational)](---github ACTUAL LINK)")
     st.write("""
         ###### ***Disclaimer***
         *This app is not a replacement for professional medical advice, diagnosis, or treatment. Always consult your doctor or a qualified healthcare provider with any questions you may have regarding your health.*
@@ -382,13 +383,13 @@ st.write('---')
 null9_0, row9_1, row9_2 = st.columns((0.02, 5, 0.05))
 with row9_1.expander("Leave Us a Comment or Question"):
     contact_form = """
-        <form action=https://formsubmit.co/aktham.momani81@gmail.com method="POST">
-            <input type="hidden" name="_captcha" value="false">
-            <input type="text" name="name" placeholder="Your name" required>
-            <input type="email" name="email" placeholder="Your email" required>
-            <textarea name="message" placeholder="Your message here"></textarea>
-            <button type="submit">Send</button>
-        </form>
+        # <form action=https://formsubmit.co/aktham.momani81@gmail.com method="POST">
+        #     <input type="hidden" name="_captcha" value="false">
+        #     <input type="text" name="name" placeholder="Your name" required>
+        #     <input type="email" name="email" placeholder="Your email" required>
+        #     <textarea name="message" placeholder="Your message here"></textarea>
+        #     <button type="submit">Send</button>
+        # </form>
     """
     st.markdown(contact_form, unsafe_allow_html=True)
 
@@ -399,9 +400,9 @@ null10_0, row10_1, row10_2 = st.columns((0.04, 7, 0.4))
 with row10_1:
     st.write("""
         ### Contacts
-        [![](https://img.shields.io/badge/GitHub-Follow-informational)](https://github.com/akthammomani)
-        [![](https://img.shields.io/badge/Linkedin-Connect-informational)](https://www.linkedin.com/in/akthammomani/)
-        [![](https://img.shields.io/badge/Open-Issue-informational)](https://github.com/akthammomani/AI_powered_heart_disease_risk_assessment_app/issues)
-        [![MAIL Badge](https://img.shields.io/badge/-aktham.momani81@gmail.com-c14438?style=flat-square&logo=Gmail&logoColor=white&link=mailto:aktham.momani81@gmail.com)](mailto:aktham.momani81@gmail.com)
-        ###### © Aktham Momani, 2024. All rights reserved.
+        [![](https://img.shields.io/badge/GitHub-Follow-informational)](github ACTUAL LINK)
+        [![](https://img.shields.io/badge/Linkedin-Connect-informational)](github ACTUAL LINK)
+        [![](https://img.shields.io/badge/Open-Issue-informational)](github ACTUAL LINK)
+        [![MAIL Badge](github ACTUAL LINK)
+        ###### © Copy Rights, 2026. All rights reserved.
     """)
