@@ -1,0 +1,11 @@
+streamlit==1.36.0
+
+numpy>=2.0.0
+pandas>=2.2.0
+
+lightgbm>=4.3.0
+category-encoders>=2.6.3
+imbalanced-learn>=0.12.3
+
+shap>=0.45.0
+plotly>=5.22.0
