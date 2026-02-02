@@ -21,10 +21,11 @@ with open(os.path.join(BASE_DIR, 'cbe_encoder.pkl'), 'rb') as f:
     encoder = pkl.load(f)
     
 # Load the dataset for reference
-data = pd.read_csv('brfss2022_data_wrangling_output.zip', compression='zip')
+data_path = os.path.join(BASE_DIR, 'brfss2022_data_wrangling_output.zip')
+data = pd.read_csv(data_path, compression='zip')
 data['heart_disease'] = data['heart_disease'].apply(lambda x: 1 if x == 'yes' else 0).astype('int')
 
-icon = Image.open("heart_disease.jpg")
+icon = Image.open(os.path.join(BASE_DIR, "heart_disease.jpg"))
 st.set_page_config(layout='wide', page_title='AI-Powered Heart Disease Assessment', page_icon=icon)
 
 # Custom CSS
@@ -32,7 +33,7 @@ def local_css(file_name):
     with open(file_name) as f:
         st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
 
-local_css("style_v1.css")
+local_css(os.path.join(BASE_DIR, "style_v1.css"))
 
 # Main layout with three columns
 row0_0, row0_1, row0_2, row0_3 = st.columns((0.08, 6, 3, 0.17))
@@ -397,7 +398,8 @@ with row9_1.expander("Leave Us a Comment or Question"):
     st.markdown(contact_form, unsafe_allow_html=True)
 
     # Use Local CSS File
-    local_css("style.css")
+    local_css(os.path.join(BASE_DIR, "style_v1.css"))
+
 
 null10_0, row10_1, row10_2 = st.columns((0.04, 7, 0.4))
 with row10_1:
